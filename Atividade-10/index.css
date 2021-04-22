@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(36, 31, 36);
+}
+
+#escolha-categoria {
+    background-color: rgb(36, 31, 36);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#b-sim {
+    border-color: white;
+    color: white;
+}
+
+#b-nao {
+    border-color: white;
+    color: white;
+}
+
+
+#b-sim:hover {
+    background-color: #198754;
+    color: white;
+    border-color: white;
+}
+
+#b-nao:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: white;
+}
+
+#fim-jogo > div {
+   border-color: #6c757d;
+}

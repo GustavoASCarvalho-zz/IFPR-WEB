@@ -1,0 +1,23 @@
+.corpo img {
+    float: none;
+    width: 300px;
+}
+
+.corpo h4 {
+    margin: 10px;
+    text-align: center;
+    font-size: 85%;
+}
+
+.corpo h2 {
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.corpo .email {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}

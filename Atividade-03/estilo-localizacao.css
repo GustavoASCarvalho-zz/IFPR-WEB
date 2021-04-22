@@ -1,0 +1,14 @@
+.corpo img {
+    float: none;
+    width: 660px;
+    border-radius: 10px;
+}
+
+.corpo h2 {
+    margin: 20px;
+    font-weight: bold;
+}
+
+#telefone {
+    text-align: center;
+}
