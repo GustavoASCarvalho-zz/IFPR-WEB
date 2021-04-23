@@ -149,6 +149,10 @@ const novoJogo = () => {
 const carregarCategorias = () => {
     axios.get(`${proxy}/${base}/api_category.php`).then((response) => {
         const categoria = response.data.trivia_categories
+            elementos.selecaoCategoria.innerHTML = ""
+            elementos.selecaoCategoria.innerHTML += `<option value="0" disabled selected >Random</option>`
+            elementos.selecaoCategoria.innerHTML += `<option value="0">Random</option>`
+                        
         for (const c of categoria) {
             elementos.selecaoCategoria.innerHTML += `<option value="${c.id}">${c.name}</option>`    
         }
