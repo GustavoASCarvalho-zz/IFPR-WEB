@@ -1,23 +1,23 @@
 const http = require('http')
 const fs = require('fs').promises
 
-const hostname = "127.0.0.1"
-const port = 80
+const hostname = "0.0.0.0"
+const port = 5000
 
-const server = http.createServer((request, response) => {
+const server = http.createServer(async (request, response) => {
     response.setHeader("Content-Type", "text/html")
     switch (request.url) {
         case "/":
-            fs.readFile('./front/index.html')
-            .then(data => {
+            try {    
+                const data = await fs.readFile('./front/index.html')
+                
                 response.writeHead(200)
-                response.end(data)
-            })
-            .catch(err => {
+                response.end(data)   
+            } catch (error) {
                 response.writeHead(500)
                 response.end(err)
                 return
-            })
+            }
             break
         case "/sobre":
             fs.readFile('./front/sobre.html')
