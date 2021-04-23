@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: rgb(36, 31, 36);
 }
 
@@ -19,7 +19,6 @@ body {
     color: white;
 }
 
-
 #b-sim:hover {
     background-color: #198754;
     color: white;
@@ -33,5 +32,9 @@ body {
 }
 
 #fim-jogo > div {
-   border-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#titulo {
+    font-size: 150px;
 }
