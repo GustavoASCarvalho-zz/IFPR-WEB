@@ -1,7 +1,7 @@
 const http = require('http')
 const fs = require('fs').promises
 
-const hostname = "localhost"
+const hostname = "0.0.0.0"
 const port = 5000
 
 const server = http.createServer(async (request, response) => {
